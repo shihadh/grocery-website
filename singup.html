@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGN UP</title>
+        <script type="text/javascript">
+            function sign(){
+
+            var a;
+        a=document.getElementById("name");
+        if(a.value==0)
+        {
+            alert("Input User Name");
+            a.focus();
+            return false;
+
+            }
+            var b;
+        b=document.getElementById("pass");
+        if(b.value==0)
+        {
+            alert("Input Password");
+            b.focus();
+            return false;
+
+            }
+            var c;
+        c=document.getElementById("pass2");
+        if(c.value==0)
+        {
+            alert("Confirm Password");
+            c.focus();
+            return false;
+
+            }
+        }
+        </script>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+    </head>
+    <body>
+        <div class="login">
+            <h1>SIGN <span>UP</span></h1>
+
+            <form action="#" method="post"></form>
+           
+            <input type="text" name="user" placeholder="User Name" id="name">
+            
+            <input type="password" name="password" placeholder="create password" id="pass" minlength="8" max="12">
+            
+            <input type="password" name="password" placeholder="confirm password" id="pass2" min="8" max="12">
+            <button type="submit" onclick="sign()">SIGN UP</button>
+        </div>
+
+    </body>
+</html>
